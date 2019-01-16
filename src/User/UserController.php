@@ -177,11 +177,11 @@ class UserController implements ContainerInjectableInterface
 
         // Questions And replies posted by user
         $usrPosts = $this->getPost($proid);
-        if(count($usrPosts) == 0) {
+        if (count($usrPosts) == 0) {
             $usrPosts = "<i>No posts so far...</i>";
         }
         $usrReplies = $this->getResponses($proid);
-        if(count($usrReplies) == 0) {
+        if (count($usrReplies) == 0) {
             $usrReplies = "<i>No replies so far...</i>";
         }
 
@@ -190,7 +190,7 @@ class UserController implements ContainerInjectableInterface
         $user->setDb($this->di->get("dbqb"));
         $res = $user->getUserDataById($proid);
         //show settings
-        if($proid == $session->get("login")) {
+        if ($proid == $session->get("login")) {
             $form = new SettingsForm($this->di, $proid);
             $form->check();
             $page->add("user/profile", [

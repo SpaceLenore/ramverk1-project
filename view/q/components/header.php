@@ -24,12 +24,12 @@ $special = $navbarConfig["special"] ?? [];
     <a href="users">Användare</a> -->
     <span style="float:right;">
         <?php
-            $session = $this->di->get("session");
-            if ($session->has("login")) {
-                echo '<a href="'. $special['profile'] . '">Profil</a> | <a href="' . $special['logout'] . '">Logga ut</a>';
-            } else {
-                echo '<a href="' . $special['signup'] . '">Skapa konto</a> | <a href="'. $special['login'] . '">Logga in</a>';
-            }
+        $session = $this->di->get("session");
+        if ($session->has("login")) {
+            echo '<a href="'. $special['profile'] . '">Profil</a> | <a href="' . $special['logout'] . '">Logga ut</a>';
+        } else {
+            echo '<a href="' . $special['signup'] . '">Skapa konto</a> | <a href="'. $special['login'] . '">Logga in</a>';
+        }
         ?>
     </span>
 </div>

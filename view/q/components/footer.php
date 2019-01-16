@@ -12,4 +12,9 @@
     .my-header a{
         padding: 10px;
     }
+
+    .button {
+        padding: 1rem;
+        border: 1px solid;
+    }
 </style>

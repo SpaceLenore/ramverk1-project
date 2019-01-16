@@ -20,36 +20,36 @@ class CreateUserForm extends FormModel
     {
         parent::__construct($di);
         $this->form->create(
-    [
-        "id" => __CLASS__,
-        "legend" => "Create user",
-    ],
-    [
-        "Username" => [
-            "type"        => "text",
-            "placeholder" => "Username",
-        ],
-
-        "password" => [
-            "type"        => "password",
-            "placeholder" => "password",
-        ],
-
-        "password-again" => [
-            "type"        => "password",
-            "placeholder" => "retype password",
-            "validation" => [
-                "match" => "password"
+            [
+                "id" => __CLASS__,
+                "legend" => "Create user",
             ],
-        ],
+            [
+                "Username" => [
+                    "type"        => "text",
+                    "placeholder" => "Username",
+                ],
 
-        "submit" => [
-            "type" => "submit",
-            "value" => "Create user",
-            "callback" => [$this, "callbackSubmit"]
-        ],
-    ]
-);
+                "password" => [
+                    "type"        => "password",
+                    "placeholder" => "password",
+                ],
+
+                "password-again" => [
+                    "type"        => "password",
+                    "placeholder" => "retype password",
+                    "validation" => [
+                        "match" => "password"
+                    ],
+                ],
+
+                "submit" => [
+                    "type" => "submit",
+                    "value" => "Create user",
+                    "callback" => [$this, "callbackSubmit"]
+                ],
+            ]
+        );
     }
 
 
@@ -66,7 +66,7 @@ class CreateUserForm extends FormModel
         $password      = $this->form->value("password");
         $passwordAgain = $this->form->value("password-again");
 
-        if ($password !== $passwordAgain ) {
+        if ($password !== $passwordAgain) {
             $this->form->rememberValues();
             $this->form->addOutput("Password did not match.");
             return false;

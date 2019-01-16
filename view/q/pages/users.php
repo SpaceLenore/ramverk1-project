@@ -1,5 +1,5 @@
 <div class="users">
-    <?php foreach ($users as $user): ?>
+    <?php foreach ($users as $user) : ?>
         <a href="profile/<?= $user->id ?>" style="color:#000;text-decoration:none;">
             <div class="user-card" style="display:flex; align-items:center; border: 1px solid; margin: 1rem;">
                 <span>

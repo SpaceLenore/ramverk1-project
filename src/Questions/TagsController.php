@@ -64,7 +64,5 @@ class TagsController implements ContainerInjectableInterface
         return $page->render([
                 "title" => "View Tags",
             ]);
-
     }
-
 }

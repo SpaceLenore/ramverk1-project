@@ -4,7 +4,6 @@ namespace Lenore\User;
 
 use Anax\DatabaseActiveRecord\ActiveRecordModel;
 
-
 /**
  * A database driven model.
  */

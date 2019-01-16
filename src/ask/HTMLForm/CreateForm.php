@@ -64,7 +64,7 @@ class CreateForm extends FormModel
     public function callbackSubmit() : bool
     {
         $s = $this->di->get("session");
-        if($s->has("login")) {
+        if ($s->has("login")) {
             $ask = new Ask();
             $ask->setDb($this->di->get("dbqb"));
             $ask->title = $this->form->value("title");
@@ -93,8 +93,6 @@ class CreateForm extends FormModel
         } else {
             return false;
         }
-
-
     }
 
 

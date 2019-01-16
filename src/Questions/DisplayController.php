@@ -94,7 +94,8 @@ class DisplayController implements ContainerInjectableInterface
         $res = $ask->getAllQuestions();
         $allPosts = [];
         for ($i=0; $i < count($res); $i++) {
-            array_push($allPosts,
+            array_push(
+                $allPosts,
                 [
                     "post" => $res[$i],
                     "tags" => $this->getTags($res[$i]->id),

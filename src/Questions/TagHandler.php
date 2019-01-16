@@ -4,7 +4,6 @@ namespace Lenore\User;
 
 use Anax\DatabaseActiveRecord\ActiveRecordModel;
 
-
 /**
  * A database driven model.
  */
@@ -23,5 +22,4 @@ class TagHandler extends ActiveRecordModel
     public $id;
     public $TagName;
     public $PostId;
-
 }
