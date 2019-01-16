@@ -9,12 +9,14 @@
     <p>
         Projektets källkod finns i mitt <a href="https://github.com/SpaceLenore/ramverk1-project">GitHub repo</a>.
         Där finns instruktioner för hur man sätter upp projektet själv och även rapporter
-        från min CI-kedja. CI-kedjan består av travis-ci, scrutinizer och code climate.
+        från min CI-kedja. CI-kedjan består av travis-ci, scrutinizer och code climate.<br>
+        Redovisningstexten för uppgiften finns att läsa på min
+        <a href="http://www.student.bth.se/~vite17/dbwebb-kurser/ramverk1/me/redovisa/htdocs/redovisning/kmom10">Ramverk1 redovisningssida</a>.
     </p>
     <h2 style="text-align:center;">Om Utvecklaren</h2>
     <p>
         Mitt namn är Vidar och det är jag som har utvecklat Questionable. Jag studerar
         Webbprogrammering på programmet dbwebb på Blekinge Tekniska Högskola. På fritiden
-        programmerar jag, läser böcker, spelar irish tin whistle och är ibland ute i skogen. 
+        programmerar jag, läser böcker, spelar irish tin whistle och är ibland ute i skogen.
     </p>
 </div>
