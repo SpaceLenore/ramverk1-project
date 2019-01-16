@@ -40,5 +40,10 @@ return [
             "url" => "users",
             "title" => "Browse users",
         ],
+        [
+            "text" => "About",
+            "url" => "about",
+            "title" => "About this project",
+        ],
     ],
 ];

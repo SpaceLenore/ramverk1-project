@@ -104,7 +104,14 @@ class UserController implements ContainerInjectableInterface
         ]);
     }
 
-
+    public function aboutAction() : object
+    {
+        $page = $this->di->get("page");
+        $page->add("q/pages/about", []);
+        return $page->render([
+            "title" => "About The Project",
+        ]);
+    }
 
     /**
      * Description.
